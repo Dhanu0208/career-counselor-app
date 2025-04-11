@@ -11,7 +11,7 @@ export default function Chat() {
     setMessages((prev) => [...prev, userMessage]);
     setInput("");
 
-    const res = await axios.post("http://localhost:5000/chat", {
+    const res = await axios.post("http://localhost:5500/chat", {
       message: input,
     });
 
